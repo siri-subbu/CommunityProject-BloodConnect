@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blood Banks</title>
+    <link rel="icon" type="image/png" href="Bdrp.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav style="text-align: right; margin: 20px 30px 0 0;">
+        <a href="index.html">
+            <button style="padding: 10px 20px;">Home</button>
+        </a>
+    </nav>
+
+    <div class="card" style="margin: 0 auto; width: 80%; margin-bottom: 50px;">
+        <div class="formhead">
+            <h2 style="text-align:center; color:red;">Available Blood Banks</h2>
+            <h4 style="text-align:center;">Locate nearby blood banks and check stock availability</h4>
+            <hr><br>
+
+            <div class="bg">
+                <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                    <select id="district" style="width: 250px; height: 30px;">
+                        <option value="">-- Select District --</option>
+                    </select>
+                    <select id="mandal" style="width: 250px; height: 30px;">
+                        <option value="">-- Select Mandal --</option>
+                    </select>
+                    <button id="searchButton" style="height: 35px;"><strong>Search</strong></button>
+                </div>
+                <br>
+
+                <div id="resultsContainer" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 20px;">
+                    <!-- Blood Bank cards will be inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+        <script src="Bbanks.js" defer></script>
+
+</body>
+</html>

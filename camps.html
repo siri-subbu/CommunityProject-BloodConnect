@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blood Donation Camps</title>
+  <link rel="icon" type="image/png" href="Bdrp.png">
+  <link rel="stylesheet" href="camps.css">
+  <script type="module" src="camps.js"></script>
+</head>
+<body>
+  <nav style="text-align: right; margin: 20px 30px 0 0;">
+    <a href="index.html">
+      <button style="padding: 10px 20px;">Home</button>
+    </a>
+  </nav>
+
+  <div class="outer-card">
+    <h2 class="heading">Blood Donation Camps</h2>
+
+    <div class="tabs">
+      <button class="tab-button active" data-target="upcoming">Upcoming</button>
+      <button class="tab-button" data-target="ongoing">Ongoing</button>
+      <button class="tab-button" data-target="completed">Completed</button>
+    </div>
+
+    <div id="upcoming" class="camp-section active"></div>
+    <div id="ongoing" class="camp-section"></div>
+    <div id="completed" class="camp-section"></div>
+
+    <div class="center">
+      <button id="contributeButton">Contribute Camp Details</button>
+    </div>
+  </div>
+
+  <!-- Modal Form -->
+<div id="campFormModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3>Share Camp Details</h3>
+    <div class="modal-body">
+      <form id="campForm">
+        <label class="required">Camp Name:</label>
+        <input type="text" id="campName" required>
+
+        <label class="required">Organizer Name / Organization:</label>
+        <input type="text" id="organizer" required>
+
+        <label class="required">Organizer Contact (Phone / Email):</label>
+        <input type="text" id="organizerContact" required>
+
+        <label class="required">District / City:</label>
+        <input type="text" id="districtCity" required>
+
+        <label class="required">Address / Venue Details:</label>
+        <input type="text" id="venue" required>
+
+        <label class="required">Date:</label>
+        <input type="date" id="date" required>
+
+        <label class="required">Your Name (Contributor):</label>
+        <input type="text" id="contributor" required>
+
+        <label class="required">Date of Contribution:</label>
+        <input type="date" id="contributionDate" required>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recipient Request</title>
+    <link rel="icon" type="image/png" href="Bdrp.png">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="RRecepient.js"></script>
+</head>
+<body>
+    <nav style="text-align: right; margin: 20px 30px 0 0;">
+        <a href="index.html">
+            <button style="padding: 10px 20px;">Home</button>
+        </a>
+    </nav>
+
+    <div class="card" style="margin: 0 auto; width: fit-content; margin-bottom: 50px;">
+        <div class="formhead">
+            <h2 style="text-align:center; color: red;">Recipient Request Form</h2>
+            <hr>
+            <br>
+            <div class="bg">
+                <form>
+                    <table>
+                        <!-- Personal Details -->
+                        <tr><td colspan="2"><h3>Personal Details</h3></td></tr>
+                        <tr>
+                            <td><br></td>
+                        </tr>
+                        <tr>
+                            <td><label for="fullname" class="required"><strong>Full Name</strong></label></td>
+                            <td><label for="gender" class="required"><strong>Gender</strong></label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="fullname" name="fullname" style="width: 300px; height: 25px;" required></td>
+                            <td><select id="gender" name="gender" style="width: 310px; height: 25px;" required>
+                                <option value="">Select Value</option>
+                                <option value="female">Female</option>
+                                <option value="male">Male</option>
+                                <option value="transgender">Transgender</option>
+                            </select></td>
+                        </tr>
+                        <tr><td>&nbsp;</td></tr>
+
+                        <tr>
+                            <td><label for="age" class="required"><strong>Age</strong></label></td>
+                            <td><label for="phone" class="required"><strong>Mobile Number</strong></label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="number" id="age" name="age" style="width: 300px; height: 25px;" required></td>
+                            <td><input type="tel" id="phone" name="phone" style="width: 300px; height: 25px;" required></td>
+                        </tr>
+                        <tr><td>&nbsp;</td></tr>
+                        <tr>
+                            <td><label for="email" class="required"><strong>Email</strong></label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="email" id="email" name="email" style="width: 300px; height: 25px;" required></td>
+                        </tr>
+
+                        <tr><td colspan="2"><hr><h3>Patient Information</h3></td></tr>
+                        <tr>
+                            <td><br></td>
+                        </tr>
+                        <tr>
+                            <td><label for="patientName" class="required"><strong>Patient Name</strong></label></td>
+                            <td><label for="relationship" class="required"><strong>Relationship to Patient</strong></label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="patientName" name="patientName" style="width: 300px; height: 25px;" required></td>
+                            <td><input type="text" id="relationship" name="relationship" style="width: 300px; height: 25px;" required></td>
+                        </tr>
+                        <tr><td>&nbsp;</td></tr>
+
+                        <tr>
+                            <td><label for="hospital" class="required"><strong>Hospital Name & Location</strong></label></td>
+                            <td><label for="doctor"><strong>Doctor’s Name / Contact</strong></label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="hospital" name="hospital" style="width: 300px; height: 25px;" required></td>
+                            <td><input type="text" id="doctor" name="doctor" style="width: 300px; height: 25px;"></td>
+                        </tr>
+
+                        <tr><td colspan="2"><hr><h3>Blood Requirement Details</h3></td></tr>
+                        <tr>
+                            <td><br></td>
+                        </tr>
+                        <tr>
+                            <td><label for="group" class="required"><strong>Required Blood Group</strong></label></td>
+                            <td><label for="quantity" class="required"><strong>Quantity Needed (Units)</strong></label></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select id="group" name="group" style="width: 310px; height: 25px;" required>
+                                    <option value="">Select Value</option>
+                                    <option value="O+">O+</option>
+                                    <option value="O-">O-</option>
+                                    <option value="A+">A+</option>
+                                    <option value="A-">A-</option>
+                                    <option value="B+">B+</option>
+                                    <option value="B-">B-</option>
+                                    <option value="AB+">AB+</option>
+                                    <option value="AB-">AB-</option>
+                                </select>
+                            </td>
+                            <td><input type="number" id="quantity" name="quantity" style="width: 300px; height: 25px;" required></td>
+                        </tr>
+                        <tr><td>&nbsp;</td></tr>
+
+                        <tr>
+                            <td><label for="date" class="required"><strong>Date Needed</strong></label></td>
+                            <td><label for="urgency" class="required"><strong>Urgency Level</strong></label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="date" id="date" name="date" style="width: 300px; height: 25px;" required></td>
+                            <td><select id="urgency" name="urgency" style="width: 310px; height: 25px;" required>
+                                <option value="">Select</option>
+                                <option value="immediate">Immediate</option>
+                                <option value="within24">Within 24 Hours</option>
+                                <option value="thisweek">This Week</option>
+                            </select></td>
+                        </tr>
+                        <tr><td>&nbsp;</td></tr>
+
+                        <tr>
+                            <td><label for="requirementType" class="required"><strong>Type of Requirement</strong></label></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="text" id="requirementType" name="requirementType" style="width: 620px; height: 25px;" placeholder="e.g., Surgery, Accident, Thalassemia" required></td>
+                        </tr>
+
+                        <tr><td colspan="2"><hr><h3>Location Information</h3></td></tr>
+                        <tr>
+                            <td><label for="district" class="required"><strong>District / City</strong></label></td>
+                            <td><label for="mandal" class="required"><strong>Mandal / Area</strong></label></td>
+                        </tr>
+                        <tr>
+                            <td><select id="district" name="district" style="width: 310px; height: 25px;" required>
+                                <option value="">-- Select District --</option>
+                            </select></td>
+                            <td><select id="mandal" name="mandal" style="width: 310px; height: 25px;" required>
+                                <option value="">-- Select Mandal --</option>
+                            </select></td>
+                        </tr>
+                        <tr><td>&nbsp;</td></tr>
+
+                        <tr>
+                            <td><label for="address" class="required"><strong>Exact Address / Landmark</strong></label></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="text" id="address" name="address" style="width: 620px; height: 25px;" required></td>
+                        </tr>
+
+                        <tr><td colspan="2"><hr><h3>Supporting Information</h3></td></tr>
+                        <tr>
+                            <td><label for="proof" class="required"><strong>Upload Doctor’s Letter / Proof </strong></label></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="file" id="proof" name="proof" style="width: 620px;"required></td>
+                        </tr>
+                        <tr><td>&nbsp;</td></tr>
+
+                        <tr>
+                            <td><label for="comments"><strong>Additional Comments</strong></label></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><textarea id="comments" name="comments" rows="3" style="width: 620px;"></textarea></td>
+                        </tr>
+                    </table>
+
+                    <table>
+                        <tr><td colspan="2"><hr><h3>Declarations & Consent</h3></td></tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="checkbox" value="agree" id="confirm" required>
+                                <label for="confirm">I confirm that the above details are true and the blood is required for medical purposes only.</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="checkbox" value="agree" id="contactagree">
+                                <label for="contactagree">I agree to be contacted by volunteers or donors regarding this request.</label>
+                            </td>
+                        </tr>
+                        <tr><td>&nbsp;</td></tr>
+                        <tr>
+                            <td colspan="2" style="text-align:center; padding-bottom: 20px;">
+                                <button id="submit" type="submit"><strong>Submit Request</strong></button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
