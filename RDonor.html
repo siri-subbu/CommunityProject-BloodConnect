@@ -19,7 +19,7 @@
                     <hr>
                     <br>
                     <div class="bg">
-                        <form action="" method="post">
+                        <form action="http://localhost:8080/register" method="post">
                             <table>
                                 <tr>
                                     <td style="padding-right: 10px;"><label style="text-decoration: solid;padding: 5px;" for="name" class="required"><strong>Name</strong></label></td>
@@ -46,8 +46,22 @@
                                 </tr>
                                 <tr><td>&nbsp;</td></tr>
                                 <tr>
+                                    <td style="padding-right: 10px;"><label style="text-decoration: solid;padding: 5px;" for="district" class="required"><strong>District/City</strong></label></td>
+                                    <td style="padding-left: 10px;"><label style="text-decoration: solid;padding: 5px;" for="mandal" class="required"><strong>Mandal</strong></label></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-right: 10px;">
+                                        <select id="district" name="district" style="width: 310px; height: 25px;background-color: white; border-width: 1px;" required>
+                                            <option value="">-- Select District --</option>
+                                    </td>
+                                    <td style="padding-left: 10px;">
+                                        <select id="mandal" name="mandal" style="width: 310px; height: 25px;background-color: white; border-width: 1px;"required>
+                                            <option value="">-- Select Mandal --</option>
+                                    </td>
+                                </tr>
+                                <tr><td>&nbsp;</td></tr>
+                                <tr>
                                     <td style="padding-right: 10px;"><label style="text-decoration: solid;padding: 5px;" for="group" class="required"><strong>Blood Group</strong></label></td>
-                                    <td style="padding-left: 10px;"><label style="text-decoration: solid;padding: 5px;" for="address" class="required"><strong>Address</strong></label></td>
                                 </tr>
                                 <tr>
                                     <td style="padding-right: 10px;">
@@ -62,22 +76,6 @@
                                             <option value="AB+">AB+</option>
                                             <option value="AB-">AB-</option>
                                         </select>
-                                    </td>
-                                    <td style="padding-left: 10px;"><input type="text" id="address" name="address" style="width: 300px; height: 25px;" required></td>
-                                </tr>
-                                <tr><td>&nbsp;</td></tr>
-                                <tr>
-                                    <td style="padding-right: 10px;"><label style="text-decoration: solid;padding: 5px;" for="district" class="required"><strong>District/City</strong></label></td>
-                                    <td style="padding-left: 10px;"><label style="text-decoration: solid;padding: 5px;" for="mandal" class="required"><strong>Mandal</strong></label></td>
-                                </tr>
-                                <tr>
-                                    <td style="padding-right: 10px;">
-                                        <select id="district" name="district" style="width: 310px; height: 25px;background-color: white; border-width: 1px;" required>
-                                            <option value="">-- Select District --</option>
-                                    </td>
-                                    <td style="padding-left: 10px;">
-                                        <select id="mandal" name="mandal" style="width: 310px; height: 25px;background-color: white; border-width: 1px;"required>
-                                            <option value="">-- Select Mandal --</option>
                                     </td>
                                 </tr>
                                 <tr><td>&nbsp;</td></tr>
